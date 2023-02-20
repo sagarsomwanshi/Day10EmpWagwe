@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WageCalculation {
-    ArrayList<Company> company1 = new ArrayList<>();
+    ArrayList<Company> EmpWageBuilder = new ArrayList<>();
 
     static int workHour,workDay;
 
@@ -22,7 +22,7 @@ public class WageCalculation {
         }
         int totalWage = workHour*hourWage;
         Company comp = new Company(companyName,totalWage,workDay);
-        company1.add(comp);
+        EmpWageBuilder.add(comp);
 
     }
     public int attendance(){
@@ -49,7 +49,7 @@ public class WageCalculation {
         int check = sc.nextInt();
         if (check == 1) {
             companyDetails();
-            System.out.println(company1);
+            System.out.println(EmpWageBuilder);
             addCompany();
         } else {
             System.out.println("Company wage calculation closed");
