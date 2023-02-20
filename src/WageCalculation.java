@@ -43,6 +43,16 @@ public class WageCalculation {
                 break;
         }
     }
-
-
+    public void addCompany() {
+        System.out.println("To calculate wage for another company press 1\n press 2 to close the employee wage calculation program");
+        Scanner sc = new Scanner(System.in);
+        int check = sc.nextInt();
+        if (check == 1) {
+            companyDetails();
+            System.out.println(company1);
+            addCompany();
+        } else {
+            System.out.println("Company wage calculation closed");
+        }
+    }
 }
