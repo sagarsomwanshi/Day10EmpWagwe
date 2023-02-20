@@ -1,13 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class WageCalculation {
+public class WageCalculation implements Interface {
     ArrayList<Company> EmpWageBuilder = new ArrayList<>();
 
     static int workHour,workDay;
 
     public void companyDetails(){
-        WageCalculation c = new WageCalculation();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Company Name");
         String companyName = sc.nextLine();
